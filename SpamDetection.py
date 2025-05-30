@@ -43,7 +43,7 @@ st.subheader('Enter a message to check if it is spam or not')  #subtitle of the 
 
 output = predict_message('Congratulations! You have won a lottery of $1000. Click here to claim your prize.')  #predict the category of the new message
 # print(output)  #print the output of the prediction
-user_message = st.text_input('Message', 'Type your message here')  #input box for the user to enter a message
+user_message = st.text_area('Message', 'Type your message here')  #input box for the user to enter a message
 
 if st.button('Validate'):
     output = predict_message(user_message)
